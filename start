@@ -3,4 +3,4 @@
 git clone $REPO_URL Repo
 cd Repo
 pip3 install -U -r requirements.txt
-python3 -m Telegram
+python3 -m tg_bot

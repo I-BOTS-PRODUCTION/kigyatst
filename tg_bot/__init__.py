@@ -102,8 +102,8 @@ class KigyoINIT:
                 return sw
 
 
-KInit = KigyoINIT(parser=kigconfig)
-
+KInit = Config
+KKInit = KigyoINIT
 SYS_ADMIN = KInit.SYS_ADMIN
 OWNER_ID = KInit.OWNER_ID
 OWNER_USERNAME = KInit.OWNER_USERNAME
@@ -138,7 +138,7 @@ LASTFM_API_KEY = KInit.LASTFM_API_KEY
 CF_API_KEY = KInit.CF_API_KEY
 
 # SpamWatch
-sw = KInit.init_sw()
+sw = KKInit.init_sw()
 
 from tg_bot.modules.sql import SESSION
 

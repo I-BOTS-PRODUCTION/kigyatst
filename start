@@ -1,6 +1,6 @@
 #!/bin/bash
     
-git clone $REPO_URL Repo
-cd Repo
+git clone https://github.com/I-BOTS-PRODUCTION/kigyatst
+cd kigyatst
 pip3 install -U -r requirements.txt
 python3 -m tg_bot

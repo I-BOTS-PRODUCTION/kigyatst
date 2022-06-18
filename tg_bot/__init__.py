@@ -10,8 +10,9 @@ from telethon.sessions import MemorySession
 from configparser import ConfigParser
 from ptbcontrib.postgres_persistence import PostgresPersistence
 from logging.config import fileConfig
-
+from config import Config
 StartTime = time.time()
+
 
 
 flag = """

@@ -31,14 +31,14 @@ fileConfig('logging.ini')
 #print(flag)
 log = logging.getLogger('[Enterprise]')
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
-log.info("[KIGYO] Kigyo is starting. | An Eagle Union Project. | Licensed under GPLv3.")
-log.info("[KIGYO] Not affiliated to Azur Lane or Yostar in any way whatsoever.")
-log.info("[KIGYO] Project maintained by: github.com/Dank-del (t.me/dank_as_fuck)")
+log.info("[Esther] Esther is starting. | An Eagle Union Project. | Licensed under GPLv3.")
+log.info("[Esther] Not affiliated to Azur Lane or Yostar in any way whatsoever.")
+log.info("[Esther] Project maintained by: github.com/Dank-del (t.me/brother_of_villain)")
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 7:
     log.error(
-        "[KIGYO] You MUST have a python version of at least 3.7! Multiple features depend on this. Bot quitting."
+        "[Esther] You MUST have a python version of at least 3.7! Multiple features depend on this. Bot quitting."
     )
     quit(1)
 
@@ -79,8 +79,8 @@ class KigyoINIT:
         self.LASTFM_API_KEY: str = self.parser.get('LASTFM_API_KEY', None)
         self.CF_API_KEY: str =  self.parser.get("CF_API_KEY", None)
         self.bot_id = 0 #placeholder
-        self.bot_name = "Kigyo" #placeholder
-        self.bot_username = "KigyoRobot" #placeholder
+        self.bot_name = "Esther" #placeholder
+        self.bot_username = "Anti_Nsfw_rbot" #placeholder
         self.DEBUG: bool = self.parser.getboolean("IS_DEBUG", False)
         self.DROP_UPDATES: bool = self.parser.getboolean("DROP_UPDATES", True)
         self.BOT_API_URL: str = self.parser.get('BOT_API_URL', "https://api.telegram.org/bot")
